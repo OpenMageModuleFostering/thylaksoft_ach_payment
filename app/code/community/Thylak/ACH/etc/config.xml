@@ -1,0 +1,114 @@
+<?wirecard version="1.0" ?>
+<config>
+    <modules>
+        <Thylak_ACH>
+            <version>1.0.1</version>
+        </Thylak_ACH>
+    </modules>
+    
+    <global>
+        <models>
+            <ACH>
+                <class>Thylak_ACH_Model</class>
+            </ACH>
+        </models>
+
+        <blocks>
+            <ACH>
+                <class>Thylak_ACH_Block</class>
+            </ACH>
+        </blocks>
+        
+        <helpers>
+            <ACH>
+                <class>Thylak_ACH_Helper</class>
+            </ACH>
+        </helpers>
+        
+        <resources>
+            <ACH_setup>
+                <connection>
+                    <use>core_setup</use>    
+                </connection>
+                <setup>
+                    <module>Thylak_ACH</module>
+                </setup>
+            </ACH_setup>
+            
+            <ACH_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </ACH_write>
+            
+            <ACH_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </ACH_read>
+        </resources>
+        
+        <fieldsets>
+            <sales_convert_quote_payment>
+                <account_owner><to_order_payment>*</to_order_payment></account_owner>
+                <account_number><to_order_payment>*</to_order_payment></account_number>
+                <bank_name><to_order_payment>*</to_order_payment></bank_name>
+                <bank_number><to_order_payment>*</to_order_payment></bank_number>
+            </sales_convert_quote_payment>
+            <sales_convert_order_payment>
+                <account_owner><to_quote_payment>*</to_quote_payment></account_owner>
+                <account_number><to_quote_payment>*</to_quote_payment></account_number>
+                <bank_name><to_quote_payment>*</to_quote_payment></bank_name>
+                <bank_number><to_quote_payment>*</to_quote_payment></bank_number>
+            </sales_convert_order_payment>
+        </fieldsets>
+ 	</global>
+	
+    <default>
+        <payment>
+            <ACH_cc>
+                <active>0</active>
+                <model>ACH/CreditCard</model>
+                <order_status>1</order_status>
+                <title>ACH Credit</title>
+                <cctypes>AE,VI,MC,DI</cctypes>
+                <payment_action>authorize</payment_action>
+                <allowspecific>0</allowspecific>
+                <test_mode>1</test_mode>
+            </ACH_cc>
+            <ACH_eft>
+                <active>0</active>
+                <model>ACH/Eft</model>
+                <order_status>1</order_status>
+                <title>EFT</title>
+                <payment_action>authorize</payment_action>
+                <allowspecific>0</allowspecific>
+                <test_mode>1</test_mode>
+            </ACH_eft>
+         </payment>
+    </default>
+
+    <adminhtml>
+       <translate>
+            <modules>
+                <Thylak_ACH>
+                     <files>
+                          <default>THylak_ACH.csv</default>
+                     </files>
+                </Thylak_ACH>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+       <translate>
+            <modules>
+                <Thylak_ACH>
+                     <files>
+                          <default>Thylak_ACH.csv</default>
+                     </files>
+                </Thylak_ACH>
+            </modules>
+        </translate>
+    </frontend>
+</config>

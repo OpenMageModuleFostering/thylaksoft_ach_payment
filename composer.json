@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/THYLAKSOFT_ACH_PAYMENT",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Thylak Pyament",
+    "authors": [
+    {
+        "name": "thangaprakash",
+        "email": "prakash.anbil@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

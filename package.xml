@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>THYLAKSOFT_ACH_PAYMENT</name>
+    <version>1.2</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Thylak Pyament</summary>
+    <description>This is my first payment module. it is used to ACH payment gateway</description>
+    <notes>This is my first payment module. it is used to ACH payment gateway</notes>
+    <authors><author><name>thangaprakash</name><user>auto-converted</user><email>prakash.anbil@gmail.com</email></author></authors>
+    <date>2009-12-22</date>
+    <time>14:31:27</time>
+    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="Ach_View"><file name="form_cc.phtml" hash="45f5a6bc2e9e1628b9dba678eed1d77f"/><file name="form_eft.phtml" hash="86744d8862d533a6a74631d0b2351b31"/><file name="info_cc.phtml" hash="61fd62b4d5d903b1e85f0445984856cc"/><file name="info_eft.phtml" hash="e6f15133f55d8d4a15dfef427062b1af"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Thylak_ACH.xml" hash="b63442c4d2c75b129830b5815d4c947b"/></dir></target><target name="magecommunity"><dir name="Thylak"><dir name="ACH"><dir name="Block"><dir name="Form"><file name="Cc.php" hash="925ade9d6cad32233a5b58a1d802f313"/><file name="Eft.php" hash="1b0c42758a68b1897cfc217b071625aa"/></dir><dir name="Info"><file name="Cc.php" hash="7fa334aa638242260856c3d1fcef59fc"/><file name="Eft.php" hash="f8a623359fd3593e562d1d4261aa3b87"/></dir></dir><dir name="etc"><file name="config.xml" hash="cc30136481006efc941bc932a1ffd41d"/><file name="system.xml" hash="271636e0230048f6bb3a8cbcabd11245"/></dir><dir name="Helper"><file name="Data.php" hash="4cbba84463a9ea610f09d164dd2728ec"/></dir><dir name="Model"><file name="CreditCard.php" hash="5b7a710ef344187a074ae8fe97372f5c"/><file name="Eft.php" hash="b8d5fa26c319d140fece4e06ae8cf432"/><file name="Process.php" hash="9228afafbc36a759b070b9e4e33e436e"/><dir name="Config"><file name="CcTransactiontype.php" hash="0ee0a9361e08db8016924e0eb1bec0b5"/><file name="EftTransactiontype.php" hash="d5098e9892bc5ffec8e492e4da3c34cf"/></dir></dir><dir name="sql"><dir name="ACH_setup"><file name="mysql4-install-1.0.1.php" hash="b700e9b25e506d5f12ea0c9e49d037f3"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>
