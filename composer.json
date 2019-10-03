@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/THYLAKSOFT_ACH_PAYMENT",
+    "name": "openmage-module-fostering\/thylaksoft_ach_payment",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
